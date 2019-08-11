@@ -1,6 +1,6 @@
 # FileLock
 
-[![Build Status](https://travis-ci.org/fab2s/FileLock.svg?branch=master)](https://travis-ci.org/fab2s/FileLock) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fab2s/FileLock/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fab2s/FileLock/?branch=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) [![License](https://poser.pugx.org/fab2s/filelock/license)](https://packagist.org/packages/fab2s/filelock)
+[![Build Status](https://travis-ci.org/fab2s/FileLock.svg?branch=master)](https://travis-ci.org/fab2s/FileLock) [![Latest Stable Version](https://poser.pugx.org/fab2s/filelock/v/stable)](https://packagist.org/packages/fab2s/filelock) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fab2s/FileLock/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fab2s/FileLock/?branch=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) [![License](https://poser.pugx.org/fab2s/filelock/license)](https://packagist.org/packages/fab2s/filelock)
 
 A fluent _Helper_ to properly handle file locking based on [flock()](https://php.net/flock).
 
@@ -124,7 +124,7 @@ Usage is pretty similar to [fopen()](https://php.net/fopen) except it returns a 
 ```php
 $filePath = "/some/dir/some.file.ext";
 $mode = 'wb'; // any fopen() mode
-$fileLock = Filelock::open($filePath, $mode); // returns false or FileLock instance
+$fileLock = Filelock::open($filePath, $mode); // returns null or FileLock instance
 
 if ($fileLock) {
 	// we got it opened and locked
