@@ -7,7 +7,7 @@
  * find in the LICENSE file or at https://opensource.org/licenses/MIT
  */
 
-namespace fab2s\Tests;
+namespace fab2s\FileLock\Tests;
 
 use fab2s\FileLock\FileLock;
 
