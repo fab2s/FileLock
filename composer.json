@@ -1,0 +1,36 @@
+{
+    "name" : "fab2s/filelock",
+    "description" : "A fluent Helper to properly handle file locking with flock",
+    "type" : "library",
+    "authors" : [{
+        "name" : "Fabrice de Stefanis"
+    }],
+    "keywords" : [
+        "PHP",
+        "Simple",
+        "Helper",
+        "file",
+        "lock",
+        "flock",
+        "FileLock"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "~7.0|~8.0"
+    },
+    "autoload": {
+        "classmap": [
+          "src"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "fab2s\\Tests\\": "tests/"
+        }
+    }
+}
