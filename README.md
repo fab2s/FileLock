@@ -92,12 +92,12 @@ $lockHandle = $lock->getHandle();
 This is mostly useful when Self locking as you probably need the handle to actually write something.
 
 - Release a lock:
-
-In all cases, locks are either released upon instance destruction or manually:
-
-```php
-$lock->unLock(); // doing so also fclose() underlying handle
-```
+    
+    In all cases, locks are either released upon instance destruction or manually:
+    
+    ```php
+    $lock->unLock(); // doing so also fclose() underlying handle
+    ```
 
 > It is **IMPORTANT** to notice that when you acquire an Self lock, you need to keep the $lock instance alive until you are done with manipulating the file. Because FileLock is set to release its locks and handles when destroyed. This could happen if you where to acquire a lock in some function without storing the resulting instance outside of its scope.
 
