@@ -1,5 +1,7 @@
 # FileLock
 
+[![Build Status](https://travis-ci.org/fab2s/FileLock.svg?branch=master)](https://travis-ci.org/fab2s/FileLock) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fab2s/FileLock/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fab2s/FileLock/?branch=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) [![License](https://poser.pugx.org/fab2s/filelock/license)](https://packagist.org/packages/fab2s/filelock)
+
 A fluent _Helper_ to properly handle file locking based on [flock()](https://php.net/flock).
 
 FileLock offers two locking strategies and several options.
@@ -10,7 +12,7 @@ Just like `flock()`, FileLock can either wait until an exclusive lock is acquire
 Math can be installed using composer :
 
 ```
-composer require "fab2s/fileloock"
+composer require "fab2s/filelock"
 ```
 
 `FileLock` is also included in [OpinHelper](https://github.com/fab2s/OpinHelpers) which packages several bellow "Swiss Army Knife" level Helpers covering some of the most annoying aspects of php programing, such as UTF8 string manipulation, high precision Mathematics or properly locking a file

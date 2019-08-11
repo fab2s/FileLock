@@ -189,9 +189,9 @@ class FileLock
             return true;
         }
 
-        $this->obtainLockHandle();
-
-        $this->lockAcquired = $this->handle ? flock($this->handle, $blocking ? LOCK_EX : LOCK_EX | LOCK_NB) : false;
+        if ($this->obtainLockHandle()) {
+            $this->lockAcquired = flock($this->handle, $blocking ? LOCK_EX : LOCK_EX | LOCK_NB);
+        }
 
         if (!$this->lockAcquired) {
             $this->unLock();
@@ -244,23 +244,34 @@ class FileLock
     }
 
     /**
-     * @return static
+     * @return bool
      */
-    protected function obtainLockHandle(): self
+    protected function obtainLockHandle(): bool
     {
         $this->mode   = $this->mode ?: (is_file($this->file) ? 'rb' : 'wb');
         $this->handle = fopen($this->file, $this->mode) ?: null;
+        if (!$this->handle) {
+            return $this->obtainLockHandleFallBack();
+        }
+
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    protected function obtainLockHandleFallBack(): bool
+    {
         if (
             $this->lockType === self::LOCK_EXTERNAL &&
-            $this->mode === 'wb' &&
-            !$this->handle
+            $this->mode === 'wb'
         ) {
             // if another process won the race at creating lock file
             $this->mode   = 'rb';
             $this->handle = fopen($this->file, $this->mode) ?: null;
         }
 
-        return $this;
+        return (bool) $this->handle;
     }
 
     /**
