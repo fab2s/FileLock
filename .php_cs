@@ -8,7 +8,7 @@ $finder = PhpCsFixer\Finder::create()
 
 $header = <<<'EOF'
 This file is part of FileLock.
-    (c) Fabrice de Stefanis / https://github.com/fab2s/OpinHelpers
+    (c) Fabrice de Stefanis / https://github.com/fab2s/FileLock
 This source file is licensed under the MIT license which you will
 find in the LICENSE file or at https://opensource.org/licenses/MIT
 EOF;
