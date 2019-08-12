@@ -134,7 +134,7 @@ if ($fileLock) {
 
 ## Requirements
 
-FileLock is tested against php 7.1, 7.2 and 7.3.
+`FileLock` is tested against php 7.1, 7.2 and 7.3.
 
 ## Contributing
 
@@ -142,4 +142,4 @@ Contributions are welcome, do not hesitate to open issues and submit pull reques
 
 ## License
 
-SoUuid is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+`FileLock` is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
