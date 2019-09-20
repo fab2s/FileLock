@@ -67,7 +67,7 @@ class FileLockTest extends \PHPUnit\Framework\TestCase
     /**
      * @return array
      */
-    public function lockMethodCases()
+    public function lockMethodCases(): array
     {
         return [
             [

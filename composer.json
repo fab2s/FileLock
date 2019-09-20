@@ -32,5 +32,13 @@
         "psr-4": {
             "fab2s\\Tests\\": "tests/"
         }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "rm -f .*.cache"
+        ],
+        "post-install-cmd": [
+            "rm -f .*.cache"
+        ]
     }
 }
