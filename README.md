@@ -1,6 +1,6 @@
 # FileLock
 
-[![Build Status](https://travis-ci.org/fab2s/FileLock.svg?branch=master)](https://travis-ci.org/fab2s/FileLock) [![Total Downloads](https://poser.pugx.org/fab2s/filelock/downloads)](//packagist.org/packages/fab2s/filelock) [![Monthly Downloads](https://poser.pugx.org/fab2s/filelock/d/monthly)](//packagist.org/packages/fab2s/filelock) [![Latest Stable Version](https://poser.pugx.org/fab2s/filelock/v/stable)](https://packagist.org/packages/fab2s/filelock) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fab2s/FileLock/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fab2s/FileLock/?branch=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) [![License](https://poser.pugx.org/fab2s/filelock/license)](https://packagist.org/packages/fab2s/filelock)
+[![Build Status](https://travis-ci.com/fab2s/FileLock.svg?branch=master)](https://travis-ci.com/fab2s/FileLock) [![Total Downloads](https://poser.pugx.org/fab2s/filelock/downloads)](//packagist.org/packages/fab2s/filelock) [![Monthly Downloads](https://poser.pugx.org/fab2s/filelock/d/monthly)](//packagist.org/packages/fab2s/filelock) [![Latest Stable Version](https://poser.pugx.org/fab2s/filelock/v/stable)](https://packagist.org/packages/fab2s/filelock) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fab2s/FileLock/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fab2s/FileLock/?branch=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com) [![License](https://poser.pugx.org/fab2s/filelock/license)](https://packagist.org/packages/fab2s/filelock)
 
 A fluent _Helper_ to properly handle file locking based on [flock()](https://php.net/flock).
 
@@ -136,7 +136,7 @@ if ($fileLock) {
 
 ## Requirements
 
-`FileLock` is tested against php 7.1, 7.2, 7.3 and 7.4
+`FileLock` is tested against php 7.1, 7.2, 7.3, 7.4 and 8.0
 
 ## Contributing
 
